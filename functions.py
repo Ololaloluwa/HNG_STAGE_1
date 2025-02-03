@@ -1,4 +1,5 @@
 import math
+import requests
 
 def integer(value):
     return int(value)
@@ -53,3 +54,8 @@ def digit_sum(value):
     for i in str(digit):
         addition += int(i)
     return addition
+
+def get_fun_fact(value:int):
+    url = f"http://numbersapi.com/{value}/math"
+    response = requests.get(url)
+    return response.text if response.status_code == 200 else "No fun fact available"
