@@ -39,18 +39,17 @@ def is_Even_or_Odd(value):
     else:
         return "Odd"
     
-def properties(value):
-   if is_Armstrong(value) == "Armstrong number":
-    property = [is_Armstrong(value),is_Even_or_Odd(value)]
-    return property
-   elif is_Armstrong(value) == "":
-    property = [is_Even_or_Odd(value)]
-    return property
+def classify_number(value):
+    if is_Armstrong(value) != "":
+        property = [is_Armstrong(value), is_Even_or_Odd(value)]
+        return property
+    elif is_Armstrong(value) == "":
+        property = [is_Even_or_Odd(value)]
+        return property
 
 def digit_sum(value):
     digit = abs(value)
     addition = 0
     for i in str(digit):
         addition += int(i)
-    return addition 
-
+    return addition
