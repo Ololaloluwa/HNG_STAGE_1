@@ -15,8 +15,8 @@ This API  classifies numbers and provides various properties and fun facts about
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/Ololaloluwa/HNG-Stage-1.git
-cd HNG-Stage-1
+git clone https://github.com/Ololaloluwa/HNG_Stage_1.git
+cd HNG_Stage_1
 
 ```
 2. Create and activate a virtual environment:
