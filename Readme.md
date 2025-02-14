@@ -37,7 +37,7 @@ uvicorn main:app --reload
 ### ENDPINTS
 #### ENDPOINT URL
 ```sh
-https://stage-1-1-n0m8.onrender.com/api/classify-number?number=<place digit>
+https://hng-stage-1-zlmg.onrender.com/api/classify-number?number=<place digit>
 ```
 
 #### METHOD:
