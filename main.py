@@ -1,7 +1,8 @@
 from fastapi import FastAPI, Query,status
 from fastapi.middleware.cors import CORSMiddleware
 from functions import is_prime, is_perfect, classify_number, digit_sum,integer,get_fun_fact
-
+import math
+import requests
 
 app = FastAPI()
 
